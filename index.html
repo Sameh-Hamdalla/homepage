@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Home Page Sameh Hamdalla</title>
+    <title>Home Page – Sameh Hamdalla</title>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <a href="index.html"></a>
-            <a href=""> <img src="bilder/logo.png" class="logo" alt="Logo"></a>
+    <!-- ===== HEADER (volle Breite) ===== -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html">
+                <img src="bilder/logo.png" class="logo" alt="Logo">
+            </a>
+
             <nav>
                 <ul>
                     <li><a href="index.html">Start</a></li>
@@ -20,22 +23,38 @@
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
             </nav>
-            <div class="language-switch">
-                <a href="index.html">Deutsch</a> | <a href="index-en.html">English</a>
 
+            <div class="language-switch">
+                <a href="index.html">Deutsch</a> |
+                <a href="index-en.html">English</a>
             </div>
-        </header>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT (begrenzt) ===== -->
+    <div class="container">
         <main class="content">
-            <h1>Willkommen auf meiner Homepage</h1>
-            <p>
-                Ich bin Sameh Hamdalla, Entwickler mit Schwerpunkt auf modernen Webtechnologien.
-                Auf dieser Seite erhalten Sie einen Überblick über meine Projekte, meine Fähigkeiten
-                sowie Möglichkeiten zur Kontaktaufnahme.
-            </p>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Willkommen auf meiner Homepage</h1>
+                    <p>
+                        Ich bin Sameh Hamdalla, Entwickler mit Schwerpunkt auf modernen Webtechnologien.
+                        Auf dieser Seite erhalten Sie einen Überblick über meine Projekte, meine Fähigkeiten
+                        sowie Möglichkeiten zur Kontaktaufnahme.
+                    </p>
+                </div>
+
+                <div class="hero-image">
+                    <img src="bilder/profile.png" alt="Sameh Hamdalla">
+                </div>
+            </section>
         </main>
+
         <footer>
             <p>&copy; 2026 Sameh Hamdalla. Alle Rechte vorbehalten.</p>
+        </footer>
     </div>
+
     <script src="script/script.js"></script>
 </body>
 </html>

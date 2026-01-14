@@ -4,37 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Home Page Sameh Hamdalla</title>
+    <title>Home Page – Sameh Hamdalla</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <!-- <a href="index-en.html"></a> -->
-            <a href="index.html"> <img src="bilder/logo.png" class="logo" alt="Logo"></a>
+
+    <!-- ===== HEADER (full width) ===== -->
+    <header>
+        <div class="header-inner">
+            <a href="index-en.html">
+                <img src="bilder/logo.png" class="logo" alt="Logo">
+            </a>
+
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="about-en.html">Profile</a></li>
+                    <li><a href="projects-en.html">Projects</a></li>
+                    <li><a href="contact-en.html">Contact</a></li>
                 </ul>
             </nav>
+
             <div class="language-switch">
-                <a href="index.html">Deutsch</a> | <a href="index-en.html">English</a>
+                <a href="index.html">Deutsch</a> |
+                <a href="index-en.html">English</a>
             </div>
-        </header>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="container">
         <main class="content">
-            <h1>Welcome to My Personal Portfolio</h1>
-            <p>
-                I am Sameh Hamdalla, a developer specializing in modern web technologies.
-                On this page, you will find an overview of my projects, my skills,
-                as well as opportunities for contact.
-            </p>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Welcome to My Personal Portfolio</h1>
+                    <p>
+                        I am Sameh Hamdalla, a developer specializing in modern web technologies.
+                        On this website, you will find an overview of my projects, my skills,
+                        and ways to get in touch with me.
+                    </p>
+                </div>
+
+                <div class="hero-image">
+                    <img src="bilder/profile.png" alt="Sameh Hamdalla">
+                </div>
+            </section>
         </main>
+
         <footer>
-            <p>&copy; 2026 Sameh Hamdalla. all rights reserved.</p>
+            <p>&copy; 2026 Sameh Hamdalla. All rights reserved.</p>
         </footer>
     </div>
+
     <script src="script/script.js"></script>
 </body>
 </html>
