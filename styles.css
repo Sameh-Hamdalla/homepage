@@ -124,7 +124,7 @@ footer {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     nav {
-        display: none;
+        justify-content: center;
     }
 
     .hero {
@@ -145,4 +145,25 @@ footer {
         width: 200px;
         height: 240px;
     }
+}
+
+.hero-buttons{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+   
+}
+.btn.primary, .btn.secondary {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+.btn.primary:hover, .btn.secondary:hover {
+    background-color: #203d5c;
 }
