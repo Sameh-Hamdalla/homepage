@@ -10,6 +10,10 @@ body {
     color: #333;
     line-height: 1.6;
 }
+html, body {
+    height: 100%;
+}
+
 
 /* ===== HEADER ===== */
 header {
@@ -116,9 +120,12 @@ nav a:hover {
 /* ===== FOOTER ===== */
 footer {
     margin-top: 80px;
+    /* margin: 20px 0; */
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     color: #777;
+     /* animation: fadeUp 1s ease-out forwards; */
+    /* opacity: 0; */
 }
 
 /* ===== RESPONSIVE ===== */
