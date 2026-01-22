@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/kontakt/kontakt.css">
     <title>Contact – Sameh Hamdalla</title>
 </head>
 <body>
@@ -17,8 +18,8 @@
         <nav>
             <ul>
                 <li><a href="/index-en.html">Home</a></li>
-                <li><a href="/profile/profile-en.html">Profile</a></li>
-                <li><a href="/projekte/projects-en.html">Projects</a></li>
+                <li><a href="/profile/profile-en.html" >Profile</a></li>
+                <li><a href="/projekte/projects-en.html" >Projects</a></li>
                 <li><a href="/kontakt/contact-en.html" class="active">Contact</a></li>
             </ul>
         </nav>
@@ -30,9 +31,49 @@
     </div>
 </header>
 
-<main class="container">
-    <!-- contact content goes here -->
+<main>
+    <section class="contact-section">
+        <h1>Contact</h1>
+        <p>I look forward to hearing from you! You can reach me using the following methods:</p>
+
+        <h2>Email</h2>
+        <p>
+            Send me an email at:
+            <a href="mailto:sa_mh87@outlook.de">sa_mh87@outlook.de</a>
+        </p>
+    </section>
+
+    <div class="contact-div">
+        <h1>Contact Form</h1>
+
+        <form action="/send_message" method="post">
+            <label for="name">First Name <span>*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Last Name <span>*</span></label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Email <span>*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number <span>*</span></label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message <span>*</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <p>Privacy Policy <span>*</span></p>
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">
+                I agree to the processing of my data in accordance with the
+                <a href="/privacy/privacy.html">privacy policy</a>.
+            </label>
+
+            <button class="btn-message" type="submit">Send Message</button>
+        </form>
+    </div>
 </main>
+
 <footer>
     <p>&copy; 2026 Sameh Hamdalla. All rights reserved.</p>
 </footer>
