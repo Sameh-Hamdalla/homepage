@@ -3,96 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home – Sameh Hamdalla</title>
+
+    <!-- Global CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Home only -->
     <link rel="stylesheet" href="home.css">
-    <title>Home Page – Sameh Hamdalla</title>
 </head>
 <body>
 
-    <!-- ===== HEADER (volle Breite) ===== -->
-    <header>
-        <div class="header-inner">
-            <a href="index.html">
-                <img src="bilder/logo.png" class="logo" alt="Logo">
-            </a>
+<header>
+    <div class="header-inner">
+        <a href="index.html">
+            <img src="bilder/logo.png" class="logo" alt="Logo">
+        </a>
 
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Start</a></li>
-                    <li><a href="/profile/profile.html">Profil</a></li>
-                    <li><a href="/projekte/projekte.html">Projekte</a></li>
-                    <li><a href="/kontakt/kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Start</a></li>
+                <li><a href="profile/profile.html">Profil</a></li>
+                <li><a href="projekte/projekte.html">Projekte</a></li>
+                <li><a href="kontakt/kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
 
-            <div class="language-switch">
-                <a href="/index.html">Deutsch</a> |
-                <a href="/index-en.html">English</a>
+        <div class="language-switch">
+            <a href="index.html">Deutsch</a> |
+            <a href="index-en.html">English</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Willkommen auf meiner Homepage</h1>
+            <p>
+                Ich bin Sameh Hamdalla, Webentwickler mit Schwerpunkt auf modernen Webtechnologien.
+                Ich entwickle strukturierte, performante und benutzerfreundliche Webanwendungen
+                und lege großen Wert auf sauberen Code, klare Strukturen und nachhaltige Lösungen.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="projekte/projekte.html" class="btn primary">Meine Projekte</a>
+                <a href="kontakt/kontakt.html" class="btn secondary">Kontaktaufnahme</a>
             </div>
         </div>
-    </header>
 
-    <!-- ===== MAIN CONTENT (begrenzt) ===== -->
-    <div class="container">
-        <main class="content">
-            <section class="hero">
-                <div class="hero-text">
-                    <h1>Willkommen auf meiner Homepage</h1>
-                    <p>
-                        Ich bin Sameh Hamdalla, Entwickler mit Schwerpunkt auf modernen Webtechnologien.
-                        Auf dieser Seite erhalten Sie einen Überblick über meine Projekte, meine Fähigkeiten
-                        sowie Möglichkeiten zur Kontaktaufnahme.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="projekte/projekte.html" class="btn primary">Meine Projekte</a>
-                        <a href="kontakt/kontakt.html" class="btn secondary">Kontaktaufnahme</a>
-                    </div>
+        <div class="hero-image">
+            <img src="bilder/profile2.jpg" alt="Sameh Hamdalla">
+        </div>
+    </section>
 
-                </div>
-                <div class="hero-image">
-                    <img src="bilder/profile.png" alt="Sameh Hamdalla">
-                </div>
-            </section>
-            <section class="home-about">
-                <h2>Über mich</h2>
-                <p>
-                    Ich bin Webentwickler mit Fokus auf sauberen Code, moderne Frontend-Technologien
-                    und klare Benutzeroberflächen.
-                </p>
-            </section>
-            <section class="home-skills">
-                <h2>Technologien</h2>
-                <ul class="skills-list">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>React</li>
-                    <li>Python</li>
-                    <li>Git & GitHub</li>
-                    <li>SQLlite</li>
-                </ul>
-            </section>
-            <section class="home-projects">
-                <h2>Ausgewählte Projekte</h2>
+    <!-- ABOUT -->
+    <section class="home-about">
+        <h2>Über mich</h2>
+        <p>
+            Ich bin Webentwickler mit Fokus auf sauberen Code, moderne Frontend-Technologien
+            und klare Benutzeroberflächen. Besonders wichtig sind mir Wartbarkeit,
+            Performance und eine intuitive Benutzererfahrung.
+            <br><br>
+            Aktuell arbeite ich intensiv mit JavaScript, TypeScript und React und
+            entwickle Full-Stack-Anwendungen mit Python und FastAPI.
+            Mein Ziel ist es, praxisnahe Lösungen zu schaffen, die sowohl technisch
+            als auch visuell überzeugen.
+            </p>
 
-                <div class="project-preview">
-                    <h3>InventarManager</h3>
-                    <p>CRUD-Web-App mit FastAPI & React.</p>
-                </div>
+    </section>
 
-                <div class="project-preview">
-                    <h3>Portfolio Website</h3>
-                    <p>Mehrsprachige persönliche Website.</p>
-                </div>
-                </section>
+    <!-- SKILLS -->
+    <section class="home-skills">
+        <h2>Meine technischen Fähigkeiten</h2>
+        <p>Diese Technologien setze ich regelmäßig in meinen Projekten ein – sowohl im Frontend als auch im Backend.</p>
+        <br>
+        <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>Git & GitHub</li>
+            <li>SQLite</li>
+        </ul>
+    </section>
 
-        </main>
+    <!-- PROJECTS PREVIEW -->
+    <section class="home-projects">
+        <h2 class="shosen-projects">Ausgewählte Projekte</h2>
 
-        <footer>
-            <p>&copy; 2026 Sameh Hamdalla. Alle Rechte vorbehalten.</p>
-        </footer>
-    </div>
+        <div class="project-preview">
+            <h3>InventarManager</h3>
+            <p>Der InventarManager ist eine Fullstack-Anwendung, die im Rahmen meiner Abschlussarbeit entwickelt wurde. Die Software dient zur Verwaltung von Inventar, Wartungen und Bestellungen. Das Projekt besteht aus einem FastAPI-Backend und einem React, Vite + TypeScript-Frontend.</p>
+        </div>
 
-    <script src="script/script.js"></script>
+        <div class="project-preview">
+            <h3>Portfolio Website</h3>
+            <p>Persönliche, mehrsprachige Portfolio-Website zur Darstellung meiner Projekte und technischen Fähigkeiten.Umgesetzt mit HTML, CSS und JavaScript mit Fokus auf saubere Struktur, Responsivität und einfache Navigation.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Sameh Hamdalla. Alle Rechte vorbehalten.</p>
+</footer>
+
 </body>
 </html>
