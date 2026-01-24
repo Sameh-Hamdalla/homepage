@@ -1,0 +1,103 @@
+/* ===== PROJECTS SECTION ===== */
+
+.project {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.1);
+}
+
+
+.project.highlight {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #ffffff, #f5f9fc);
+  border-left: 6px solid #195d8a;
+}
+
+.project.highlight h3 {
+  font-size: 24px;
+}
+
+
+.projects h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 50px;
+  color: #195d8a;
+}
+
+/* Grid Layout */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Project Card */
+.project {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effekt */
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.project p{
+    font-size: 15px;
+    line-height: 1.55;
+    color: #555;
+}
+
+/* Project Title */
+.project h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0f3f5f;
+}
+
+/* Description */
+.project p {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* Link */
+.project a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #195d8a;
+  text-decoration: none;
+}
+
+.project a:hover {
+  color: #007acc;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .projects h2 {
+    font-size: 26px;
+  }
+
+  .project {
+    padding: 22px;
+  }
+}
