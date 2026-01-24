@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h2, h1 {
+    color: #222;
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    border-radius: 50px;
+    margin: 30px
+
+}
+h1:hover, h2:hover{
+  color: #007acc;
+  transform: translateY(-4px);
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+/* ===== HOME ABOUT ===== */
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+
+.profile-cta{
+    margin-bottom: 40px;
+}

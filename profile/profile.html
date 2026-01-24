@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="/profile.css">
-    <title>Home Page – Sameh Hamdalla</title>
+    <link rel="stylesheet" href="profile.css">
+    <title>Profil – Sameh Hamdalla</title>
 </head>
 <body>
 
@@ -31,28 +31,120 @@
             </div>
         </div>
     </header>
-    <main >
-    <!-- Profil-Inhalt kommt hier -->
-     <section class="profile-content">
-        <h1>Profil von Sameh Hamdalla</h1>
-        <p>Willkommen auf meiner Profilseite! Hier erfahren Sie mehr über mich, meine Fähigkeiten und Erfahrungen.</p>
-        <h2>Über mich</h2>
-        <p>Ich bin Sameh Hamdalla, ein leidenschaftlicher Entwickler mit Erfahrung in Webentwicklung und Softwaredesign.</p>
-        <h2>Fähigkeiten</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Java</li>
-            <li>Datenbankmanagement</li>
-        </ul>
-        <h2>Erfahrungen</h2>
-        <p>Ich habe an verschiedenen Projekten gearbeitet, die von kleinen Webseiten bis hin zu komplexen Anwendungen reichen.</p>  
+    <!-- ===== INHALT ===== -->
+     <main class="container">
 
-     </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Sameh Hamdalla. Alle Rechte vorbehalten.</p>
-    </footer>
+  <!-- Intro -->
+  <section class="profile-intro">
+    <h1>Profil</h1>
+    <p>
+      Auf dieser Seite erhalten Sie einen Überblick über meinen Hintergrund,
+      meine technischen Schwerpunkte und meine Arbeitsweise als Softwareentwickler.
+    </p>
+  </section>
 
-    <script src="script/script.js"></script>
+  <!-- About -->
+  <section class="profile-about">
+    <h2>Über mich</h2>
+    <p>
+      Ich bin Frontend Softwareentwickler mit abgeschlossenem Studium der
+      Betriebswirtschaftslehre (B.A.) und einer Weiterbildung zum Software Developer (IHK).
+      Mein Schwerpunkt liegt auf der Entwicklung moderner, responsiver Webanwendungen
+      mit HTML, CSS, JavaScript, TypeScript und React.
+    </p>
+  </section>
+
+  <!-- Focus -->
+  <section class="profile-focus">
+    <h2>Technischer Fokus</h2>
+    <ul>
+      <li>Frontend-Entwicklung mit HTML, CSS, JavaScript, TypeScript und React</li>
+      <li>Responsives Design und klare Benutzeroberflächen</li>
+      <li>Grundkenntnisse im Backend mit Python, FastAPI und SQL</li>
+      <li>Versionskontrolle und Projektarbeit mit Git und GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Background -->
+  <section class="profile-background">
+    <h2>Hintergrund</h2>
+    <p>
+      Meine Kenntnisse habe ich durch praxisorientierte Projekte, intensives Selbststudium
+      sowie durch die Entwicklung einer Fullstack-Anwendung im Rahmen meiner Abschlussarbeit aufgebaut.
+      Dabei lege ich Wert auf saubere Strukturen, nachvollziehbaren Code und eine gute Nutzerführung.
+    </p>
+  </section>
+
+  <!-- Workstyle -->
+  <section class="profile-workstyle">
+    <h2>Arbeitsweise</h2>
+    <ul>
+      <li>Strukturierte Projektorganisation und saubere Codebasis</li>
+      <li>Fokus auf Wartbarkeit, Performance und Benutzerfreundlichkeit</li>
+      <li>Lösungsorientiertes Arbeiten und kontinuierliche Weiterentwicklung</li>
+    </ul>
+  </section>
+
+  <!-- CTA -->
+  <section class="profile-cta">
+    <h2>Nächster Schritt</h2>
+    <p>
+      Wenn Sie mehr über meine Projekte erfahren möchten oder Interesse an einer Zusammenarbeit haben,
+      freue ich mich über eine Kontaktaufnahme.
+    </p>
+
+    <!-- <div class="cta-buttons">
+      <a href="../projekte/projekte.html" class="btn primary">Projekte ansehen</a>
+      <a href="../kontakt/kontakt.html" class="btn secondary">Kontakt aufnehmen</a>
+    </div> -->
+  </section>
+  <br>
+
+  <!-- Optional: CV Download -->
+  <section class="profile-cv">
+    <a href="/profile/Lebenslauf Sameh Hamdalla.pdf" class="btn secondary" target="_blank">
+      Lebenslauf als PDF herunterladen
+    </a>
+  </section>
+
+</main>
+        
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Spalte 1 -->
+    <div class="footer-column">
+      <h3>Kontaktdaten</h3>
+      <p><strong>Sameh Hamdalla</strong></p>
+      <p>Webentwickler</p>
+      <p>E-Mail: sa_mh87@outlook.de</p>
+    </div>
+
+    <!-- Spalte 2 -->
+    <div class="footer-column">
+      <h3>Netzwerke</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sameh-hamdalla-214a68215/" target="_blank"><img src="/bilder/linkedin.png" alt="LinkedIn" class="social-icon">LinkedIn</a></li>
+                <li><a href="https://github.com/Sameh-Hamdalla" target="_blank"><img src="/bilder/github.png" alt="GitHub" class="social-icon">GitHub</a></li>
+            </ul>
+    </div>
+
+    <!-- Spalte 3 -->
+    <div class="footer-column">
+      <h3>Rechtliches</h3>
+      <ul>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Sameh Hamdalla
+  </div>
+</footer>
+
+<script src="script/script.js"></script>
 </body>
 </html>
