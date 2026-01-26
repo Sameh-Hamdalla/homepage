@@ -3,39 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile – Sameh Hamdalla</title>
-
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="profile.css">
+  <title>Profile – Sameh Hamdalla</title>
 </head>
 <body>
 
 <header>
   <div class="header-inner">
 
-    <a href="/index-en.html">
-      <img src="/bilder/logo.png" class="logo" alt="Logo">
+    <a href="../index-en.html">
+      <img src="../bilder/logo.png" class="logo" alt="Logo">
     </a>
 
-    <button class="menu-toggle">☰</button>
+    <button class="menu-toggle" aria-label="open menu">☰</button>
 
     <nav class="main-nav">
       <ul>
-        <li><a href="/index-en.html">Home</a></li>
-        <li><a href="/profile/profile-en.html" class="active">Profile</a></li>
-        <li><a href="/projekte/projects-en.html">Projects</a></li>
-        <li><a href="/kontakt/contact-en.html">Contact</a></li>
+        <li><a href="../index-en.html">Home</a></li>
+        <li><a href="profile-en.html" class="active">Profile</a></li>
+        <li><a href="../projekte/projects-en.html">Projects</a></li>
+        <li><a href="../kontakt/contact-en.html">Contact</a></li>
 
+        <!-- 🌍 Language inside menu (Mobile) -->
         <li class="nav-language">
-          <a href="/profile/profile.html">Deutsch</a> |
-          <a href="/profile/profile-en.html">English</a>
+          <a href="profile.html">Deutsch</a> |
+          <a href="profile-en.html">English</a>
         </li>
       </ul>
     </nav>
 
+    <!-- 🌍 Language desktop -->
     <div class="language-switch desktop-only">
-      <a href="/profile/profile.html">Deutsch</a> |
-      <a href="/profile/profile-en.html">English</a>
+      <a href="profile.html">Deutsch</a> |
+      <a href="profile-en.html">English</a>
     </div>
 
   </div>
@@ -46,17 +47,19 @@
   <section class="profile-intro">
     <h1>Profile ▾</h1>
     <p>
-      This page provides an overview of my background,
-      technical focus, and working style as a software developer.
+      On this page, you will find an overview of my background,
+      technical focus, and working approach as a software developer.
     </p>
   </section>
 
   <section class="profile-about">
     <h2>About Me ▾</h2>
     <p>
-      I am a frontend software developer with a degree in Business Administration (B.A.)
-      and a professional certification as a Software Developer (IHK).
-      My focus is on building modern, responsive web applications.
+      I am a frontend software developer with a Bachelor's degree in
+      Business Administration (B.A.) and a professional qualification
+      as a Software Developer (IHK).
+      My focus is on building modern, responsive web applications using
+      HTML, CSS, JavaScript, TypeScript, and React.
     </p>
   </section>
 
@@ -64,30 +67,92 @@
     <h2>Technical Focus ▾</h2>
     <ul>
       <li>Frontend development with HTML, CSS, JavaScript, TypeScript, and React</li>
-      <li>Responsive design and clear user interfaces</li>
+      <li>Responsive design and clear, user-friendly interfaces</li>
       <li>Basic backend knowledge with Python, FastAPI, and SQL</li>
-      <li>Version control and collaboration using Git and GitHub</li>
+      <li>Version control and project collaboration using Git and GitHub</li>
     </ul>
   </section>
 
+  <section class="profile-background">
+    <h2>Background ▾</h2>
+    <p>
+      I acquired my professional skills through a certified Software Developer (IHK)
+      training program, complemented by hands-on projects, self-directed learning,
+      and the development of a full-stack web application as part of my final project.
+      I place great importance on clean code, maintainability, and intuitive user experiences.
+    </p>
+  </section>
+
   <section class="profile-workstyle">
-    <h2>Working Style ▾</h2>
+    <h2>Work Style ▾</h2>
     <ul>
-      <li>Structured project organization</li>
-      <li>Focus on maintainability and performance</li>
-      <li>Continuous learning and improvement</li>
+      <li>Structured project organization and clean codebases</li>
+      <li>Strong focus on maintainability, performance, and usability</li>
+      <li>Solution-oriented mindset and continuous learning</li>
     </ul>
+  </section>
+
+  <section class="profile-cta">
+    <h2>Next Step ▾</h2>
+    <p>
+      If you would like to learn more about my projects or are interested
+      in working together, I would be happy to hear from you.
+    </p>
+  </section>
+
+  <section class="profile-cv">
+    <a href="/profile/Lebenslauf Sameh Hamdalla.pdf" target="_blank" class="btn secondary">
+      Download CV as PDF
+    </a>
+
+    <a href="/profile/Software Entwickler Hamdalla Zertifikat.pdf" target="_blank" class="btn secondary">
+      Download IHK Certificate
+    </a>
   </section>
 
 </main>
 
 <footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-column">
+      <h3>Contact Information</h3>
+      <p><strong>Sameh Hamdalla</strong></p>
+      <p>Web Developer</p>
+      <p>Email: sa_mh87@outlook.de</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Networks</h3>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/sameh-hamdalla-214a68215/" target="_blank">
+            <img src="../bilder/linkedin.png" class="social-icon">LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Sameh-Hamdalla" target="_blank">
+            <img src="../bilder/github.png" class="social-icon">GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="#">Imprint</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
   <div class="footer-bottom">© 2026 Sameh Hamdalla</div>
 </footer>
 
 <button id="scrollTopBtn">↑</button>
 <script src="../script/menu.js"></script>
 <script src="../script/script-profile.js"></script>
-
 </body>
 </html>
