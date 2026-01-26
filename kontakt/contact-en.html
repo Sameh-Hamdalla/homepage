@@ -1,83 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/kontakt/kontakt.css">
-    <title>Contact – Sameh Hamdalla</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact – Sameh Hamdalla</title>
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="/styles.css">
+  <!-- Contact only -->
+  <link rel="stylesheet" href="/kontakt/kontakt.css">
 </head>
 <body>
 
 <header>
-    <div class="header-inner">
-        <a href="/index-en.html">
-            <img src="/bilder/logo.png" class="logo" alt="Logo">
-        </a>
+  <div class="header-inner">
 
-        <nav>
-            <ul>
-                <li><a href="/index-en.html">Home</a></li>
-                <li><a href="/profile/profile-en.html" >Profile</a></li>
-                <li><a href="/projekte/projects-en.html" >Projects</a></li>
-                <li><a href="/kontakt/contact-en.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Logo -->
+    <a href="/index-en.html">
+      <img src="/bilder/logo.png" class="logo" alt="Logo">
+    </a>
 
-            <div class="language-switch">
-                <a href="/kontakt/kontakt.html">Deutsch</a> |
-                <a href="/kontakt/contact-en.html">English</a>
-            </div>
+    <!-- ☰ Burger -->
+    <button class="menu-toggle" aria-label="open menu">☰</button>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/index-en.html">Home</a></li>
+        <li><a href="/profile/profile-en.html">Profile</a></li>
+        <li><a href="/projekte/projects-en.html">Projects</a></li>
+        <li><a href="/kontakt/contact-en.html" class="active">Contact</a></li>
+
+        <!-- 🌍 Language INSIDE menu (mobile) -->
+        <li class="nav-language">
+          <a href="/kontakt/kontakt.html">Deutsch</a> |
+          <a href="/kontakt/contact-en.html">English</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 🌍 Language desktop -->
+    <div class="language-switch desktop-only">
+      <a href="/kontakt/kontakt.html">Deutsch</a> |
+      <a href="/kontakt/contact-en.html">English</a>
     </div>
+
+  </div>
 </header>
 
 <main>
-    <section class="contact-section">
-        <h1>Contact</h1>
-        <p>I look forward to hearing from you! You can reach me using the following methods:</p>
 
-        <h2>Email</h2>
-        <p>
-            Send me an email at:
-            <a href="mailto:sa_mh87@outlook.de">sa_mh87@outlook.de</a>
-        </p>
-    </section>
+  <!-- CONTACT INFO -->
+  <section class="contact-section">
+    <h1>Contact</h1>
+    <p>
+      I look forward to hearing from you!  
+      You can reach me using the following methods:
+    </p>
 
-    <div class="contact-div">
-        <h1>Contact Form</h1>
+    <h2>Email</h2>
+    <p>
+      Send me an email at:
+      <a href="mailto:sa_mh87@outlook.de">sa_mh87@outlook.de</a>
+    </p>
+  </section>
 
-        <form action="/send_message" method="post">
-            <label for="name">First Name <span>*</span></label>
-            <input type="text" id="name" name="name" required>
+  <!-- CONTACT FORM -->
+  <div class="contact-div">
+    <h1>Contact Form</h1>
 
-            <label for="surname">Last Name <span>*</span></label>
-            <input type="text" id="surname" name="surname" required>
+    <form action="/send_message" method="post">
 
-            <label for="email">Email <span>*</span></label>
-            <input type="email" id="email" name="email" required>
+      <label for="name">First Name <span>*</span></label>
+      <input type="text" id="name" name="name" required>
 
-            <label for="phone">Phone Number <span>*</span></label>
-            <input type="tel" id="phone" name="phone" required>
+      <label for="surname">Last Name <span>*</span></label>
+      <input type="text" id="surname" name="surname" required>
 
-            <label for="message">Message <span>*</span></label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="email">Email <span>*</span></label>
+      <input type="email" id="email" name="email" required>
 
-            <p>Privacy Policy <span>*</span></p>
-            <input type="checkbox" id="privacy" name="privacy" required>
-            <label for="privacy">
-                I agree to the processing of my data in accordance with the
-                <a href="/privacy/privacy.html">privacy policy</a>.
-            </label>
+      <label for="phone">Phone Number <span>*</span></label>
+      <input type="tel" id="phone" name="phone" required>
 
-            <button class="btn-message" type="submit">Send Message</button>
-        </form>
-    </div>
+      <label for="message">Message <span>*</span></label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <p>Privacy Policy <span>*</span></p>
+      <input type="checkbox" id="privacy" name="privacy" required>
+      <label for="privacy">
+        I agree to the processing of my data in accordance with the
+        <a href="/privacy/privacy.html">privacy policy</a>.
+      </label>
+
+      <button class="btn-message" type="submit">Send Message</button>
+    </form>
+  </div>
+
 </main>
 
 <footer class="site-footer">
   <div class="footer-container">
 
-    <!-- Column 1 -->
     <div class="footer-column">
       <h3>Contact Information</h3>
       <p><strong>Sameh Hamdalla</strong></p>
@@ -85,7 +110,6 @@
       <p>Email: sa_mh87@outlook.de</p>
     </div>
 
-    <!-- Column 2 -->
     <div class="footer-column">
       <h3>Networks</h3>
       <ul>
@@ -106,7 +130,6 @@
       </ul>
     </div>
 
-    <!-- Column 3 -->
     <div class="footer-column">
       <h3>Legal</h3>
       <ul>
@@ -123,6 +146,10 @@
 </footer>
 
 <button id="scrollTopBtn">↑</button>
-<script src="../script/script.js"></script>
+
+<!-- Scripts -->
+<script src="/script/menu.js"></script>
+<script src="/script/script.js"></script>
+
 </body>
 </html>
