@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home – Sameh Hamdalla</title>
 
+  <!-- Global CSS -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Home only -->
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -26,6 +28,7 @@
         <li><a href="projekte/projects-en.html">Projects</a></li>
         <li><a href="kontakt/contact-en.html">Contact</a></li>
 
+        <!-- 🌍 Language INSIDE menu (mobile) -->
         <li class="nav-language">
           <a href="index.html">Deutsch</a> |
           <a href="index-en.html">English</a>
@@ -33,6 +36,7 @@
       </ul>
     </nav>
 
+    <!-- 🌍 Language DESKTOP -->
     <div class="language-switch desktop-only">
       <a href="index.html">Deutsch</a> |
       <a href="index-en.html">English</a>
@@ -43,13 +47,14 @@
 
 <main class="container">
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-text">
       <h1>Welcome to My Homepage</h1>
       <p>
         I am Sameh Hamdalla, a web developer specializing in modern web technologies.
-        I build structured, performant, and user-friendly web applications
-        with a strong focus on clean code and sustainable solutions.
+        I build structured, high-performance, and user-friendly web applications
+        with a strong focus on clean code, clear architecture, and sustainable solutions.
       </p>
 
       <div class="hero-buttons">
@@ -63,10 +68,68 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
+  <section class="home-about">
+    <h2>About Me ▾</h2>
+    <p>
+      I am a web developer with a strong focus on clean code, modern frontend technologies,
+      and clear user interfaces. Maintainability, performance, and an intuitive user experience
+      are especially important to me.
+      <br><br>
+      I currently work extensively with JavaScript, TypeScript, and React and
+      develop full-stack applications using Python and FastAPI.
+      My goal is to create practical solutions that are both technically solid
+      and visually appealing.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="home-skills">
+    <h2>My Technical Skills ▾</h2>
+    <p>
+      These are the technologies I regularly use in my projects,
+      both on the frontend and backend.
+    </p>
+    <br>
+    <ul class="skills-list">
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <li>React</li>
+      <li>Python</li>
+      <li>Git & GitHub</li>
+      <li>SQLite</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS PREVIEW -->
+  <section class="home-projects">
+    <h2 class="shosen-projects">Selected Projects ▾</h2>
+
+    <div class="project-preview">
+      <h3>InventarManager ▾</h3>
+      <p>
+        InventarManager is a full-stack application developed as part of my final thesis.
+        The software is used to manage inventory, maintenance, and orders.
+        The project consists of a FastAPI backend and a React frontend built with Vite and TypeScript.
+      </p>
+    </div>
+
+    <div class="project-preview">
+      <h3>Portfolio Website ▾</h3>
+      <p>
+        Personal, multilingual portfolio website showcasing my projects and technical skills.
+        Built with HTML, CSS, and JavaScript, focusing on clean structure,
+        responsiveness, and simple navigation.
+      </p>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
   <div class="footer-container">
+
     <div class="footer-column">
       <h3>Contact Information</h3>
       <p><strong>Sameh Hamdalla</strong></p>
@@ -77,8 +140,16 @@
     <div class="footer-column">
       <h3>Networks</h3>
       <ul>
-        <li><a href="https://github.com/Sameh-Hamdalla" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/sameh-hamdalla-214a68215/" target="_blank">
+            <img src="/bilder/linkedin.png" alt="LinkedIn" class="social-icon">LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Sameh-Hamdalla" target="_blank">
+            <img src="/bilder/github.png" alt="GitHub" class="social-icon">GitHub
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -89,9 +160,12 @@
         <li><a href="#">Privacy Policy</a></li>
       </ul>
     </div>
+
   </div>
 
-  <div class="footer-bottom">© 2026 Sameh Hamdalla</div>
+  <div class="footer-bottom">
+    © 2026 Sameh Hamdalla
+  </div>
 </footer>
 
 <button id="scrollTopBtn">↑</button>
@@ -100,4 +174,5 @@
 
 </body>
 </html>
+
 
