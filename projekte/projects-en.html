@@ -1,188 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="projekte.css">
-    <title>Projects – Sameh Hamdalla</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects – Sameh Hamdalla</title>
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="projekte.css">
 </head>
 <body>
 
 <header>
-    <div class="header-inner">
-        <a href="/index-en.html">
-            <img src="/bilder/logo.png" class="logo" alt="Logo">
-        </a>
+  <div class="header-inner">
 
-        <nav>
-            <ul>
-                <li><a href="/index-en.html">Home</a></li>
-                <li><a href="/profile/profile-en.html">Profile</a></li>
-                <li><a href="/projekte/projects-en.html" class="active">Projects</a></li>
-                <li><a href="/kontakt/contact-en.html">Contact</a></li>
-            </ul>
-        </nav>
+    <a href="/index-en.html">
+      <img src="/bilder/logo.png" class="logo" alt="Logo">
+    </a>
 
-        <div class="language-switch">
-            <a href="/projekte/projekte.html">Deutsch</a> |
-            <a href="/projekte/projects-en.html">English</a>
-        </div>
+    <!-- ☰ Menu button -->
+    <button class="menu-toggle" aria-label="open menu">☰</button>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/index-en.html">Home</a></li>
+        <li><a href="/profile/profile-en.html">Profile</a></li>
+        <li><a href="/projekte/projects-en.html" class="active">Projects</a></li>
+        <li><a href="/kontakt/contact-en.html">Contact</a></li>
+
+        <!-- 🌍 Language inside menu (mobile) -->
+        <li class="nav-language">
+          <a href="/projekte/projekte.html">Deutsch</a> |
+          <a href="/projekte/projects-en.html">English</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 🌍 Language desktop -->
+    <div class="language-switch desktop-only">
+      <a href="/projekte/projekte.html">Deutsch</a> |
+      <a href="/projekte/projects-en.html">English</a>
     </div>
+
+  </div>
 </header>
 
 <main class="container">
-    <section class="projects" id="projects">
+  <section class="projects" id="projects">
 
-        <h2 class="project highlight">My Projects</h2>
+    <h2 class="project highlight">My Projects</h2>
 
-        <div class="project">
-            <h3>InventarManager</h3>
-            <p>
-                A full-stack web application for managing inventory, maintenance, and orders.
-                Backend built with FastAPI, frontend with React, Vite, and TypeScript.
-            </p>
-            <a href="https://github.com/Sameh-Hamdalla/crud-app" target="_blank">
-                🔗 View Code
-            </a>
-        </div>
+    <div class="project">
+      <h3>InventarManager</h3>
+      <p>
+        A full-stack web application for managing inventory, maintenance, and orders.
+        Backend built with FastAPI, frontend with React, Vite, and TypeScript.
+      </p>
+      <a href="https://github.com/Sameh-Hamdalla/crud-app" target="_blank">🔗 View Code</a>
+    </div>
 
-        <div class="project">
-            <h3>crud-app</h3>
-            <p>
-                A simple web application for creating, editing, deleting, and displaying tasks.
-                Built with HTML, CSS, and JavaScript – ideal for practicing CRUD functionality.
-            </p>
-            <a href="https://github.com/Sameh-Hamdalla/crud-app" target="_blank">
-                🔗 View Code
-            </a>
-        </div>
+    <div class="project">
+      <h3>CRUD App</h3>
+      <p>
+        A simple web application for creating, editing, deleting, and displaying tasks.
+        Built with HTML, CSS, and JavaScript – ideal for practicing CRUD functionality.
+      </p>
+      <a href="https://github.com/Sameh-Hamdalla/crud-app" target="_blank">🔗 View Code</a>
+    </div>
 
-        <div class="project">
-            <h3>Contact Form</h3>
-            <p>
-                A personal contact form built with HTML, CSS, and a bit of JavaScript.
-                Demonstrates user-friendly input handling and form design.
-            </p>
-            <a href="https://github.com/Sameh-Hamdalla/Kontaktformular" target="_blank">
-                🔗 View Project
-            </a>
-        </div>
+    <div class="project">
+      <h3>Contact Form</h3>
+      <p>
+        A personal contact form built with HTML, CSS, and a bit of JavaScript.
+        Demonstrates clean form design and user-friendly input handling.
+      </p>
+      <a href="https://github.com/Sameh-Hamdalla/Kontaktformular" target="_blank">🔗 View Project</a>
+    </div>
 
-        <div class="project">
-            <h3>Social Links Profile Card</h3>
-            <p>
-                A modern, responsive profile card featuring a profile image, short description,
-                and clickable social media buttons. Optimized for desktop and mobile.
-            </p>
-            <a href="https://github.com/Sameh-Hamdalla/Social-Links-Profilkarte" target="_blank">
-                🔗 View Project
-            </a>
-        </div>
+    <div class="project">
+      <h3>Social Links Profile Card</h3>
+      <p>
+        A modern, responsive profile card with image, short description,
+        and clickable buttons linking to social networks.
+        Optimized for desktop and mobile devices.
+      </p>
+      <a href="https://github.com/Sameh-Hamdalla/Social-Links-Profilkarte" target="_blank">🔗 View Project</a>
+    </div>
 
-        <div class="project">
-            <h3>Simple Calculator</h3>
-            <p>
-                An interactive calculator supporting basic arithmetic operations such as addition,
-                subtraction, multiplication, and division. Built with HTML, CSS, and JavaScript.
-            </p>
-            <a href="https://github.com/Sameh-Hamdalla/Taschenrechner-" target="_blank">
-                🔗 View Project
-            </a>
-        </div>
+    <div class="project">
+      <h3>Simple Calculator</h3>
+      <p>
+        A simple interactive calculator supporting basic operations such as
+        addition, subtraction, multiplication, and division.
+        Built with HTML, CSS, and JavaScript.
+      </p>
+      <a href="https://github.com/Sameh-Hamdalla/Taschenrechner-" target="_blank">🔗 View Project</a>
+    </div>
 
-        <div class="project">
-            <h3>ToDo App</h3>
-            <p>
-                A small web application that displays Islamic prayer times for a selected location.
-                Data is calculated automatically or loaded via an API.
-            </p>
-            <a href="https://github.com/Sameh-Hamdalla/Gebetszeiten" target="_blank">
-                🔗 View Project
-            </a>
-        </div>
+    <div class="project">
+      <h3>ToDo App</h3>
+      <p>
+        A small web application that displays Islamic prayer times
+        for a selected location. The times are calculated automatically
+        or loaded via an API.
+      </p>
+      <a href="https://github.com/Sameh-Hamdalla/Gebetszeiten" target="_blank">🔗 View Project</a>
+    </div>
 
-        <div class="project">
-            <h3>Mini Login Page</h3>
-            <p>
-                A simple login page built with HTML and CSS, featuring a clean design
-                and user-friendly interface. Ideal for practicing UI basics.
-            </p>
-            <a href="https://github.com/Sameh-Hamdalla/mini-login-system" target="_blank">
-                🔗 View Project
-            </a>
-        </div>
+    <div class="project">
+      <h3>Mini Login Page</h3>
+      <p>
+        A simple login page built with HTML and CSS,
+        focusing on clean design and user-friendly layout.
+      </p>
+      <a href="https://github.com/Sameh-Hamdalla/mini-login-system">🔗 View Project</a>
+    </div>
 
-        <div class="project">
-            <h3>Mobile App Landing Page</h3>
-            <p>
-                A modern landing page for a mobile app, built with HTML, CSS, and JavaScript.
-                Showcases app features and encourages users to download it.
-            </p>
-            <a href="https://github.com/Sameh-Hamdalla/Landing-page-Apple-Handys" target="_blank">
-                🔗 View Project
-            </a>
-        </div>
+    <div class="project">
+      <h3>Mobile App Landing Page</h3>
+      <p>
+        A modern landing page for a mobile app, built with HTML, CSS,
+        and JavaScript. Showcases app features and encourages downloads.
+      </p>
+      <a href="https://github.com/Sameh-Hamdalla/Landing-page-Apple-Handys">🔗 View Project</a>
+    </div>
 
-        <div class="project">
-            <h3>Dashboard</h3>
-            <p>
-                An interactive dashboard built with HTML, CSS, and JavaScript,
-                featuring widgets for displaying data and statistics.
-            </p>
-            <a href="https://github.com/Sameh-Hamdalla/Dashboard-HTML-CSS" target="_blank">
-                🔗 View Project
-            </a>
-        </div>
+    <div class="project">
+      <h3>Dashboard</h3>
+      <p>
+        An interactive dashboard built with HTML, CSS, and JavaScript,
+        featuring widgets for displaying data and statistics.
+      </p>
+      <a href="https://github.com/Sameh-Hamdalla/Dashboard-HTML-CSS">🔗 View Project</a>
+    </div>
 
-    </section>
+  </section>
 </main>
 
 <footer class="site-footer">
-    <div class="footer-container">
+  <div class="footer-container">
 
-        <div class="footer-column">
-            <h3>Contact Information</h3>
-            <p><strong>Sameh Hamdalla</strong></p>
-            <p>Web Developer</p>
-            <p>Email: sa_mh87@outlook.de</p>
-        </div>
-
-        <div class="footer-column">
-            <h3>Networks</h3>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/sameh-hamdalla-214a68215/" target="_blank">
-                        <img src="/bilder/linkedin.png" alt="LinkedIn" class="social-icon">
-                        LinkedIn
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Sameh-Hamdalla" target="_blank">
-                        <img src="/bilder/github.png" alt="GitHub" class="social-icon">
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-column">
-            <h3>Legal</h3>
-            <ul>
-                <li><a href="#">Imprint</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-
+    <div class="footer-column">
+      <h3>Contact Information</h3>
+      <p><strong>Sameh Hamdalla</strong></p>
+      <p>Web Developer</p>
+      <p>Email: sa_mh87@outlook.de</p>
     </div>
 
-    <div class="footer-bottom">
-        © 2026 Sameh Hamdalla
+    <div class="footer-column">
+      <h3>Networks</h3>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/sameh-hamdalla-214a68215/" target="_blank">
+            <img src="/bilder/linkedin.png" alt="LinkedIn" class="social-icon">LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Sameh-Hamdalla" target="_blank">
+            <img src="/bilder/github.png" alt="GitHub" class="social-icon">GitHub
+          </a>
+        </li>
+      </ul>
     </div>
+
+    <div class="footer-column">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="#">Imprint</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Sameh Hamdalla
+  </div>
 </footer>
-<button id="scrollTopBtn">↑</button>
-<script src="../script/script.js"></script>
-</body>
-</html>
 
+<button id="scrollTopBtn">↑</button>
+<script src="../script/menu.js"></script>
+<script src="../script/script.js"></script>
+
+</body>
 </html>

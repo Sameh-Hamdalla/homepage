@@ -10,26 +10,40 @@
 <body>
 
 <header>
-    <div class="header-inner">
-        <a href="/index.html">
-            <img src="/bilder/logo.png" class="logo" alt="Logo">
-        </a>
+  <div class="header-inner">
 
-        <nav>
-            <ul>
-                <li><a href="/index.html">Start</a></li>
-                <li><a href="/profile/profile.html">Profil</a></li>
-                <li><a href="/projekte/projekte.html" class="active">Projekte</a></li>
-                <li><a href="/kontakt/kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+    <a href="/index.html">
+      <img src="/bilder/logo.png" class="logo" alt="Logo">
+    </a>
 
-        <div class="language-switch">
-            <a href="/projekte/projekte.html">Deutsch</a> |
-            <a href="/projekte/projects-en.html">English</a>
-        </div>
+    <!-- ☰ Menü-Button -->
+    <button class="menu-toggle" aria-label="open menu">☰</button>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/index.html">Start</a></li>
+        <li><a href="/profile/profile.html">Profil</a></li>
+        <li><a href="/projekte/projekte.html" class="active">Projekte</a></li>
+        <li><a href="/kontakt/kontakt.html">Kontakt</a></li>
+
+        <!-- 🌍 Sprache IM Menü (Mobile) -->
+        <li class="nav-language">
+          <a href="/projekte/projekte.html">Deutsch</a> |
+          <a href="/projekte/projects-en.html">English</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 🌍 Sprache Desktop -->
+    <div class="language-switch desktop-only">
+      <a href="/projekte/projekte.html">Deutsch</a> |
+      <a href="/projekte/projects-en.html">English</a>
     </div>
+
+  </div>
 </header>
+
 
 <main class="container">
     <section class="projects" id="projekte">
@@ -143,7 +157,9 @@
 </footer>
 
 <button id="scrollTopBtn">↑</button>
+<script src="../script/menu.js"></script>
 <script src="../script/script.js"></script>
+
 
 </body>
 </html>
