@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="profile.css">
-    <title>Profil – Sameh Hamdalla</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="profile.css">
+  <title>Profil – Sameh Hamdalla</title>
 </head>
 <body>
 
-    <!-- ===== HEADER (volle Breite) ===== -->
-    <header>
-        <div class="header-inner">
-            <a href="/index.html">
-            <img src="/bilder/logo.png" class="logo" alt="Logo">
-            </a>
+<header>
+  <div class="header-inner">
 
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Start</a></li>
-                    <li><a href="/profile/profile.html" class="active">Profil</a></li>
-                    <li><a href="/projekte/projekte.html">Projekte</a></li>
-                    <li><a href="/kontakt/kontakt.html" >Kontakt</a></li>
-                </ul>
-            </nav>
+    <a href="../index.html">
+      <img src="../bilder/logo.png" class="logo" alt="Logo">
+    </a>
 
-            <div class="language-switch">
-            <a href="/profile/profile.html">Deutsch</a> |
-            <a href="/profile/profile-en.html">English</a>
-            </div>
-        </div>
-    </header>
-    <!-- ===== INHALT ===== -->
-     <main class="container">
+    <button class="menu-toggle" aria-label="open menu">☰</button>
 
-  <!-- Intro -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Start</a></li>
+        <li><a href="profile.html" class="active">Profil</a></li>
+        <li><a href="../projekte/projekte.html">Projekte</a></li>
+        <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+
+        <!-- 🌍 Sprache im Menü (Mobile) -->
+        <li class="nav-language">
+          <a href="profile.html">Deutsch</a> |
+          <a href="profile-en.html">English</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 🌍 Sprache Desktop -->
+    <div class="language-switch desktop-only">
+      <a href="profile.html">Deutsch</a> |
+      <a href="profile-en.html">English</a>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+
   <section class="profile-intro">
-    <h1>Profil</h1>
+    <h1>Profil ▾</h1>
     <p>
       Auf dieser Seite erhalten Sie einen Überblick über meinen Hintergrund,
       meine technischen Schwerpunkte und meine Arbeitsweise als Softwareentwickler.
     </p>
   </section>
 
-  <!-- About -->
   <section class="profile-about">
-    <h2>Über mich</h2>
+    <h2>Über mich ▾</h2>
     <p>
       Ich bin Frontend Softwareentwickler mit abgeschlossenem Studium der
       Betriebswirtschaftslehre (B.A.) und einer Weiterbildung zum Software Developer (IHK).
@@ -54,9 +62,8 @@
     </p>
   </section>
 
-  <!-- Focus -->
   <section class="profile-focus">
-    <h2>Technischer Fokus</h2>
+    <h2>Technischer Fokus ▾</h2>
     <ul>
       <li>Frontend-Entwicklung mit HTML, CSS, JavaScript, TypeScript und React</li>
       <li>Responsives Design und klare Benutzeroberflächen</li>
@@ -65,19 +72,18 @@
     </ul>
   </section>
 
-  <!-- Background -->
   <section class="profile-background">
-    <h2>Hintergrund</h2>
+    <h2>Hintergrund ▾</h2>
     <p>
-      Meine Kenntnisse habe ich durch praxisorientierte Projekte, intensives Selbststudium
-      sowie durch die Entwicklung einer Fullstack-Anwendung im Rahmen meiner Abschlussarbeit aufgebaut.
-      Dabei lege ich Wert auf saubere Strukturen, nachvollziehbaren Code und eine gute Nutzerführung.
+      Meine fachlichen Kenntnisse habe ich durch eine Weiterbildung zum Softwareentwickler (IHK) aufgebaut.
+      Ergänzt wird diese durch praxisnahe Projekte, eigenständiges Lernen und die Entwicklung
+      einer Fullstack-Webanwendung im Rahmen meiner Abschlussarbeit.
+      Besonders wichtig sind mir klar strukturierter Code, Wartbarkeit und eine intuitive Benutzerführung.
     </p>
   </section>
 
-  <!-- Workstyle -->
   <section class="profile-workstyle">
-    <h2>Arbeitsweise</h2>
+    <h2>Arbeitsweise ▾</h2>
     <ul>
       <li>Strukturierte Projektorganisation und saubere Codebasis</li>
       <li>Fokus auf Wartbarkeit, Performance und Benutzerfreundlichkeit</li>
@@ -85,34 +91,29 @@
     </ul>
   </section>
 
-  <!-- CTA -->
   <section class="profile-cta">
-    <h2>Nächster Schritt</h2>
+    <h2>Nächster Schritt ▾</h2>
     <p>
       Wenn Sie mehr über meine Projekte erfahren möchten oder Interesse an einer Zusammenarbeit haben,
       freue ich mich über eine Kontaktaufnahme.
     </p>
-
-    <!-- <div class="cta-buttons">
-      <a href="../projekte/projekte.html" class="btn primary">Projekte ansehen</a>
-      <a href="../kontakt/kontakt.html" class="btn secondary">Kontakt aufnehmen</a>
-    </div> -->
   </section>
-  <br>
 
-  <!-- Optional: CV Download -->
   <section class="profile-cv">
-    <a href="/profile/Lebenslauf Sameh Hamdalla.pdf" class="btn secondary" target="_blank">
+    <a href="/profile/Lebenslauf Sameh Hamdalla.pdf" target="_blank" class="btn secondary">
       Lebenslauf als PDF herunterladen
+    </a>
+
+    <a href="/profile/Software Entwickler Hamdalla Zertifikat.pdf" target="_blank" class="btn secondary">
+      IHK-Zertifikat herunterladen
     </a>
   </section>
 
 </main>
-        
+
 <footer class="site-footer">
   <div class="footer-container">
 
-    <!-- Spalte 1 -->
     <div class="footer-column">
       <h3>Kontaktdaten</h3>
       <p><strong>Sameh Hamdalla</strong></p>
@@ -120,16 +121,16 @@
       <p>E-Mail: sa_mh87@outlook.de</p>
     </div>
 
-    <!-- Spalte 2 -->
     <div class="footer-column">
       <h3>Netzwerke</h3>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/sameh-hamdalla-214a68215/" target="_blank"><img src="/bilder/linkedin.png" alt="LinkedIn" class="social-icon">LinkedIn</a></li>
-                <li><a href="https://github.com/Sameh-Hamdalla" target="_blank"><img src="/bilder/github.png" alt="GitHub" class="social-icon">GitHub</a></li>
-            </ul>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/sameh-hamdalla-214a68215/" target="_blank">
+          <img src="../bilder/linkedin.png" class="social-icon">LinkedIn</a></li>
+        <li><a href="https://github.com/Sameh-Hamdalla" target="_blank">
+          <img src="../bilder/github.png" class="social-icon">GitHub</a></li>
+      </ul>
     </div>
 
-    <!-- Spalte 3 -->
     <div class="footer-column">
       <h3>Rechtliches</h3>
       <ul>
@@ -140,12 +141,11 @@
 
   </div>
 
-  <div class="footer-bottom">
-    © 2026 Sameh Hamdalla
-  </div>
+  <div class="footer-bottom">© 2026 Sameh Hamdalla</div>
 </footer>
 
 <button id="scrollTopBtn">↑</button>
+<script src="../script/menu.js"></script>
 <script src="../script/script-profile.js"></script>
 </body>
 </html>
