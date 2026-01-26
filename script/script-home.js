@@ -188,3 +188,10 @@ scrollTopBtn.addEventListener("click", function () {
 });
 
 // ###################################
+
+// const menuToggle = document.querySelector(".main-nav");
+// const nav = document.querySelector();
+
+// menuToggle.addEventListener("click", function () {
+//   nav.classList.toggle("active");
+// });
