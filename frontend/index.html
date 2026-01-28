@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home – Sameh Hamdalla</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home – Sameh Hamdalla</title>
 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Home only -->
-    <link rel="stylesheet" href="home.css">
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="/frontend/styles.css">
+  <!-- Home only -->
+  <link rel="stylesheet" href="/frontend/home.css">
 </head>
 <body>
 
@@ -28,7 +28,6 @@
         <li><a href="/frontend/projekte/projekte.html">Projekte</a></li>
         <li><a href="/frontend/kontakt/kontakt.html">Kontakt</a></li>
 
-        <!-- 🌍 Sprache INS Menü -->
         <li class="nav-language">
           <a href="/frontend/index.html">Deutsch</a> |
           <a href="/frontend/index-en.html">English</a>
@@ -36,7 +35,7 @@
       </ul>
     </nav>
 
-    <!-- 🌍 Sprache für DESKTOP -->
+    <!-- Sprache Desktop -->
     <div class="language-switch desktop-only">
       <a href="/frontend/index.html">Deutsch</a> |
       <a href="/frontend/index-en.html">English</a>
@@ -47,80 +46,85 @@
 
 <main class="container">
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Willkommen auf meiner Homepage</h1>
-            <p>
-                Ich bin Sameh Hamdalla, Webentwickler mit Schwerpunkt auf modernen Webtechnologien.
-                Ich entwickle strukturierte, performante und benutzerfreundliche Webanwendungen
-                und lege großen Wert auf sauberen Code, klare Strukturen und nachhaltige Lösungen.
-            </p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Willkommen auf meiner Homepage</h1>
+      <p>
+        Ich bin Sameh Hamdalla, Webentwickler mit Schwerpunkt auf modernen Webtechnologien.
+        Ich entwickle strukturierte, performante und benutzerfreundliche Webanwendungen
+        und lege großen Wert auf sauberen Code, klare Strukturen und nachhaltige Lösungen.
+      </p>
 
-            <div class="hero-buttons">
-                <a href="/frontend/projekte/projekte.html" class="btn primary">Meine Projekte</a>
-                <a href="/frontend/kontakt/kontakt.html" class="btn secondary">Kontaktaufnahme</a>
-            </div>
-        </div>
+      <div class="hero-buttons">
+        <a href="/frontend/projekte/projekte.html" class="btn primary">Meine Projekte</a>
+        <a href="/frontend/kontakt/kontakt.html" class="btn secondary">Kontaktaufnahme</a>
+      </div>
+    </div>
 
-        <div class="hero-image">
-            <img src="/frontend/bilder/profile2.jpg" alt="Sameh Hamdalla">
-        </div>
-    </section>
+    <div class="hero-image">
+      <img src="/frontend/bilder/profile2.jpg" alt="Sameh Hamdalla">
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section class="home-about">
-        <h2>Über mich ▾</h2>
-        <p>
-            Ich bin Webentwickler mit Fokus auf sauberen Code, moderne Frontend-Technologien
-            und klare Benutzeroberflächen. Besonders wichtig sind mir Wartbarkeit,
-            Performance und eine intuitive Benutzererfahrung.
-            <br><br>
-            Aktuell arbeite ich intensiv mit JavaScript, TypeScript und React und
-            entwickle Full-Stack-Anwendungen mit Python und FastAPI.
-            Mein Ziel ist es, praxisnahe Lösungen zu schaffen, die sowohl technisch
-            als auch visuell überzeugen.
-            </p>
+  <!-- ABOUT -->
+  <section class="home-about">
+    <h2>Über mich ▾</h2>
+    <p>
+      Ich bin Webentwickler mit Fokus auf sauberen Code, moderne Frontend-Technologien
+      und klare Benutzeroberflächen. Besonders wichtig sind mir Wartbarkeit,
+      Performance und eine intuitive Benutzererfahrung.
+      <br><br>
+      Aktuell arbeite ich intensiv mit JavaScript, TypeScript und React und
+      entwickle Full-Stack-Anwendungen mit Python und FastAPI.
+      Mein Ziel ist es, praxisnahe Lösungen zu schaffen, die sowohl technisch
+      als auch visuell überzeugen.
+    </p>
+  </section>
 
-    </section>
+  <!-- SKILLS -->
+  <section class="home-skills">
+    <h2>Meine technischen Fähigkeiten ▾</h2>
+    <p>Diese Technologien setze ich regelmäßig in meinen Projekten ein – sowohl im Frontend als auch im Backend.</p>
+    <br>
+    <ul class="skills-list">
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <li>React</li>
+      <li>Python</li>
+      <li>Git & GitHub</li>
+      <li>SQLite</li>
+    </ul>
+  </section>
 
-    <!-- SKILLS -->
-    <section class="home-skills">
-        <h2>Meine technischen Fähigkeiten ▾</h2>
-        <p>Diese Technologien setze ich regelmäßig in meinen Projekten ein – sowohl im Frontend als auch im Backend.</p>
-        <br>
-        <ul class="skills-list">
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Python</li>
-            <li>Git & GitHub</li>
-            <li>SQLite</li>
-        </ul>
-    </section>
+  <!-- PROJECTS PREVIEW -->
+  <section class="home-projects">
+    <h2 class="shosen-projects">Ausgewählte Projekte ▾</h2>
 
-    <!-- PROJECTS PREVIEW -->
-    <section class="home-projects">
-        <h2 class="shosen-projects">Ausgewählte Projekte ▾</h2>
+    <div class="project-preview">
+      <h3>InventarManager ▾</h3>
+      <p>
+        Der InventarManager ist eine Fullstack-Anwendung, die im Rahmen meiner Abschlussarbeit entwickelt wurde.
+        Die Software dient zur Verwaltung von Inventar, Wartungen und Bestellungen.
+        Das Projekt besteht aus einem FastAPI-Backend und einem React, Vite + TypeScript-Frontend.
+      </p>
+    </div>
 
-        <div class="project-preview">
-            <h3>InventarManager ▾</h3>
-            <p>Der InventarManager ist eine Fullstack-Anwendung, die im Rahmen meiner Abschlussarbeit entwickelt wurde. Die Software dient zur Verwaltung von Inventar, Wartungen und Bestellungen. Das Projekt besteht aus einem FastAPI-Backend und einem React, Vite + TypeScript-Frontend.</p>
-        </div>
-
-        <div class="project-preview">
-            <h3>Portfolio Website ▾</h3>
-            <p>Persönliche, mehrsprachige Portfolio-Website zur Darstellung meiner Projekte und technischen Fähigkeiten.Umgesetzt mit HTML, CSS und JavaScript mit Fokus auf saubere Struktur, Responsivität und einfache Navigation.</p>
-        </div>
-    </section>
+    <div class="project-preview">
+      <h3>Portfolio Website ▾</h3>
+      <p>
+        Persönliche, mehrsprachige Portfolio-Website zur Darstellung meiner Projekte und technischen Fähigkeiten.
+        Umgesetzt mit HTML, CSS und JavaScript mit Fokus auf saubere Struktur, Responsivität und einfache Navigation.
+      </p>
+    </div>
+  </section>
 
 </main>
 
 <footer class="site-footer">
   <div class="footer-container">
 
-    <!-- Spalte 1 -->
     <div class="footer-column">
       <h3>Kontaktdaten</h3>
       <p><strong>Sameh Hamdalla</strong></p>
@@ -128,16 +132,22 @@
       <p>E-Mail: sa_mh87@outlook.de</p>
     </div>
 
-    <!-- Spalte 2 -->
     <div class="footer-column">
       <h3>Netzwerke</h3>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/sameh-hamdalla-214a68215/" target="_blank"><img src="/frontend/bilder/linkedin.png" alt="LinkedIn" class="social-icon">LinkedIn</a></li>
-                <li><a href="https://github.com/Sameh-Hamdalla" target="_blank"><img src="/frontend/bilder/github.png" alt="GitHub" class="social-icon">GitHub</a></li>
-            </ul>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/sameh-hamdalla-214a68215/" target="_blank">
+            <img src="/frontend/bilder/linkedin.png" alt="LinkedIn" class="social-icon">LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Sameh-Hamdalla" target="_blank">
+            <img src="/frontend/bilder/github.png" alt="GitHub" class="social-icon">GitHub
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <!-- Spalte 3 -->
     <div class="footer-column">
       <h3>Rechtliches</h3>
       <ul>
@@ -152,7 +162,9 @@
     © 2026 Sameh Hamdalla
   </div>
 </footer>
+
 <button id="scrollTopBtn">↑</button>
+
 <script src="/frontend/script/menu.js"></script>
 <script src="/frontend/script/script-home.js"></script>
 
