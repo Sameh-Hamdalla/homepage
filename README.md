@@ -1,4 +1,3 @@
-
 This repository contains my **personal portfolio website**, built to present my profile, projects, and technical skills in a clear, modern, and responsive way.
 
 The website is fully responsive and optimized for **desktop, tablet, and mobile devices**.
@@ -6,7 +5,8 @@ The website is fully responsive and optimized for **desktop, tablet, and mobile 
 ---
 
 ## 🌐 Live Preview
-> *(Optional – add later if you deploy it)*  
+
+> _(Optional – add later if you deploy it)_  
 > https://your-domain.com
 
 ---
@@ -38,11 +38,13 @@ The website is fully responsive and optimized for **desktop, tablet, and mobile 
 ## 📱 Responsive Design
 
 The layout automatically adapts to different screen sizes:
+
 - Desktop
 - Tablet
 - Smartphone
 
 Special attention was given to:
+
 - Mobile navigation
 - Card layouts
 - Readability on small screens
@@ -52,6 +54,7 @@ Special attention was given to:
 ## 🚀 Purpose
 
 This project was created to:
+
 - Showcase my frontend development skills
 - Present my projects in a structured way
 - Serve as a professional portfolio for job applications
@@ -61,9 +64,9 @@ This project was created to:
 ## 📌 Author
 
 **Sameh Hamdalla**  
-Frontend Web Developer  
+Frontend Web Developer
 
-- GitHub: https://github.com/Sameh-Hamdalla  
+- GitHub: https://github.com/Sameh-Hamdalla
 - LinkedIn: https://www.linkedin.com/in/sameh-hamdalla-214a68215/
 
 ---
@@ -72,3 +75,12 @@ Frontend Web Developer
 
 This project is for **personal and educational purposes**.
 
+## projects.json
+
+Diese Datei enthält die Projektdaten für die Homepage.
+Die Daten werden per Fetch API geladen und dynamisch im Frontend angezeigt.
+
+### Struktur eines Projekts:
+
+- title (string): Name des Projekts
+- description (string): Beschreibung des Projekts
