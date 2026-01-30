@@ -37,14 +37,21 @@ if (skillsTitle && skillsText && skillsList) {
 // PROJECTS (FETCH + 2 LEVELS)
 // =======================
 async function loadProjects() {
-  const response = await fetch("projects.json"); // Browser holt die Datei projects.json
-  const projects = await response.json(); // Pack das Paket aus und gib mir das als JSON Datei
+  // 1️⃣ Prüfen, welche Sprache aktiv ist
+  const isEnglish = window.location.pathname.includes("index-en");
+
+  // 2️⃣ Passende JSON-Datei wählen
+  const jsonFile = isEnglish ? "projects-en.json" : "projects.json";
+
+  // 3️⃣ Daten laden
+  const response = await fetch(jsonFile);
+  const projects = await response.json();
 
   const section = document.querySelector(".home-projects");
   const title = section.querySelector("h2");
 
   let visible = false;
-  const elements = []; // Hier speichern wir später die erzeigten Daten
+  const elements = [];
 
   projects.forEach((project) => {
     const div = document.createElement("div");

@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Inventory Manager",
+    "description": "Inventory Manager is a full-stack application developed as part of my final project. The software is used to manage inventory, maintenance, and orders. It consists of a FastAPI backend and a React frontend built with Vite and TypeScript."
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "A personal, multilingual portfolio website showcasing my projects and technical skills. Built with HTML, CSS, and JavaScript, with a strong focus on clean structure, responsiveness, and intuitive navigation."
+  }
+]
