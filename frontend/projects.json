@@ -1,0 +1,10 @@
+[
+  {
+    "title": "InventarManager",
+    "description": "Der InventarManager ist eine Fullstack-Anwendung, die im Rahmen meiner Abschlussarbeit entwickelt wurde. Die Software dient zur Verwaltung von Inventar, Wartungen und Bestellungen. Das Projekt besteht aus einem FastAPI-Backend und einem React, Vite + TypeScript-Frontend."
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "Persönliche, mehrsprachige Portfolio-Website zur Darstellung meiner Projekte und technischen Fähigkeiten. Umgesetzt mit HTML, CSS und JavaScript mit Fokus auf saubere Struktur, Responsivität und einfache Navigation."
+  }
+]
