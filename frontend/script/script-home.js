@@ -43,6 +43,14 @@ async function loadProjects() {
   // 2️⃣ Passende JSON-Datei wählen
   const jsonFile = isEnglish ? "projects-en.json" : "projects.json";
 
+  // KurzForm für:
+
+  //   if (isEnglish) {
+  //   jsonFile = "projects-en.json";
+  // } else {
+  //   jsonFile = "projects.json";
+  // }
+
   // 3️⃣ Daten laden
   const response = await fetch(jsonFile);
   const projects = await response.json();
@@ -79,6 +87,9 @@ async function loadProjects() {
       el.style.display = visible ? "none" : "block";
     });
     visible = !visible;
+    //     „Gehe jedes einzelne Projekt durch
+    // und nimm jedes einzelne Element
+    // und zeig es oder versteck es.“
   });
 }
 
