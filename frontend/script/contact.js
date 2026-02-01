@@ -1,3 +1,21 @@
+// =======================================
+// BACKEND URL KONFIGURATION
+// =======================================
+// ✅ STANDARD = LOCAL AKTIV
+// 👉 Wenn du später auf Render/Online wechseln willst,
+// dann diese Zeile auskommentieren
+// und die darunter aktivieren.
+
+const API_URL = "http://localhost:8000/api/contact";
+
+// 👉 ALTERNATIVE — Netlify + Render (Online Backend)
+// ❗ Nur aktivieren wenn dein Backend online deployed ist
+// const API_URL = "https://your-backend.onrender.com/api/contact";
+
+// =======================================
+// SCRIPT START
+// =======================================
+
 // Warten, bis das komplette HTML geladen ist
 document.addEventListener("DOMContentLoaded", function () {
   // Formular über die ID aus dem HTML holen
@@ -14,7 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Verhindert das Neuladen der Seite
     event.preventDefault();
 
-    // Daten aus den Input-Feldern auslesen
+    // -----------------------------
+    // FORM DATEN LESEN
+    // -----------------------------
     const data = {
       name: document.getElementById("name").value,
       surname: document.getElementById("surname").value,
@@ -23,46 +43,39 @@ document.addEventListener("DOMContentLoaded", function () {
       message: document.getElementById("message").value,
     };
 
-    // Test: Daten in der Konsole anzeigen
     console.log("Formulardaten:", data);
+
     // -----------------------------
     // AN BACKEND SENDEN
     // -----------------------------
-
-    // fetch sendet eine HTTP Anfrage an dein Node Backend
-    const response = await fetch(
-      "https://homepage-production-1e9f.up.railway.app/api/contact",
-      {
-        // POST = wir senden Daten
+    try {
+      const response = await fetch(API_URL, {
         method: "POST",
-
-        // Header sagt: ich sende JSON
         headers: {
           "Content-Type": "application/json",
         },
-
-        // Datenobjekt → JSON Text umwandeln
         body: JSON.stringify(data),
-      },
-    );
+      });
 
-    // -----------------------------
-    // ANTWORT LESEN
-    // -----------------------------
+      // -----------------------------
+      // ANTWORT LESEN
+      // -----------------------------
+      const result = await response.json();
 
-    const result = await response.json();
+      console.log("Server Antwort:", result);
 
-    console.log("Server Antwort:", result);
-
-    // -----------------------------
-    // USER INFO
-    // -----------------------------
-
-    if (result.ok) {
-      alert("Nachricht gespeichert ✅");
-      form.reset();
-    } else {
-      alert("Speichern fehlgeschlagen ❌");
+      // -----------------------------
+      // USER INFO
+      // -----------------------------
+      if (result.ok) {
+        alert("Nachricht gespeichert ✅");
+        form.reset();
+      } else {
+        alert("Speichern fehlgeschlagen ❌");
+      }
+    } catch (error) {
+      console.error("Fetch Fehler:", error);
+      alert("Backend nicht erreichbar ❌");
     }
   });
 });
