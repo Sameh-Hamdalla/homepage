@@ -30,18 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // -----------------------------
 
     // fetch sendet eine HTTP Anfrage an dein Node Backend
-    const response = await fetch("http: //localhost:800/api/contact", {
-      // POST = wir senden Daten
-      method: "POST",
+    const response = await fetch(
+      "https://homepage-production-1e9f.up.railway.app/api/contact",
+      {
+        // POST = wir senden Daten
+        method: "POST",
 
-      // Header sagt: ich sende JSON
-      headers: {
-        "Content-Type": "application/json",
+        // Header sagt: ich sende JSON
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        // Datenobjekt → JSON Text umwandeln
+        body: JSON.stringify(data),
       },
-
-      // Datenobjekt → JSON Text umwandeln
-      body: JSON.stringify(data),
-    });
+    );
 
     // -----------------------------
     // ANTWORT LESEN
