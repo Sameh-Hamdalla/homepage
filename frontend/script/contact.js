@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Event auslösen, wenn auf "Nachricht senden" geklickt wird
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", async function (event) {
     // Verhindert das Neuladen der Seite
     event.preventDefault();
 
@@ -25,5 +25,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Test: Daten in der Konsole anzeigen
     console.log("Formulardaten:", data);
+    // -----------------------------
+    // AN BACKEND SENDEN
+    // -----------------------------
+
+    // fetch sendet eine HTTP Anfrage an dein Node Backend
+    const response = await fetch("http://localhost:8000/api/contact", {
+      // POST = wir senden Daten
+      method: "POST",
+
+      // Header sagt: ich sende JSON
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      // Datenobjekt → JSON Text umwandeln
+      body: JSON.stringify(data),
+    });
+
+    // -----------------------------
+    // ANTWORT LESEN
+    // -----------------------------
+
+    const result = await response.json();
+
+    console.log("Server Antwort:", result);
+
+    // -----------------------------
+    // USER INFO
+    // -----------------------------
+
+    if (result.ok) {
+      alert("Nachricht gespeichert ✅");
+      form.reset();
+    } else {
+      alert("Speichern fehlgeschlagen ❌");
+    }
   });
 });
