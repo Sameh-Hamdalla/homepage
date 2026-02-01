@@ -90,6 +90,9 @@ app.post("/api/contact", (req, res) => {
 // SERVER STARTEN (IMMER GANZ UNTEN)
 // -----------------------------
 
-app.listen(8000, () => {
-  console.log("Server läuft auf http://localhost:8000");
+// Damit ist mein Server 100% korrekt konfiguriert.
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => {
+  console.log("Server läuft auf Port", PORT);
 });
