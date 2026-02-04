@@ -6,5 +6,9 @@
   {
     "title": "Portfolio Website",
     "description": "Persönliche, mehrsprachige Portfolio-Website zur Darstellung meiner Projekte und technischen Fähigkeiten. Umgesetzt mit HTML, CSS und JavaScript mit Fokus auf saubere Struktur, Responsivität und einfache Navigation."
+  },
+  {
+    "title": "Taxi-Firma Website",
+    "description": "Eine responsive Website für eine Taxi-Firma, die moderne Gestaltung und intuitive Navigation bietet. Entwickelt mit HTML, CSS und JavaScript."
   }
 ]

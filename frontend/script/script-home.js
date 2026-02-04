@@ -34,36 +34,34 @@ if (skillsTitle && skillsText && skillsList) {
 }
 
 // =======================
-// PROJECTS (FETCH + 2 LEVELS)
-// =======================
 async function loadProjects() {
-  // 1️⃣ Prüfen, welche Sprache aktiv ist
-  const isEnglish = window.location.pathname.includes("index-en");
-
-  // 2️⃣ Passende JSON-Datei wählen
-  const jsonFile = isEnglish ? "projects-en.json" : "projects.json";
-
-  // KurzForm für:
-
-  //   if (isEnglish) {
-  //   jsonFile = "projects-en.json";
-  // } else {
-  //   jsonFile = "projects.json";
-  // }
-
-  // 3️⃣ Daten laden
-  const response = await fetch(jsonFile);
-  const projects = await response.json();
-
   const section = document.querySelector(".home-projects");
+  if (!section) return;
+
   const title = section.querySelector("h2");
+  if (!title) return;
 
   let visible = false;
   const elements = [];
 
+  // CLICK LISTENER SOFORT
+  title.addEventListener("click", () => {
+    elements.forEach((el) => {
+      el.style.display = visible ? "none" : "block";
+    });
+    visible = !visible;
+  });
+
+  // DATA LOAD SPÄTER
+  const isEnglish = window.location.pathname.includes("index-en");
+  const jsonFile = isEnglish ? "projects-en.json" : "projects.json";
+
+  const response = await fetch(jsonFile);
+  const projects = await response.json();
+
   projects.forEach((project) => {
     const div = document.createElement("div");
-    div.classList.add("project-preview");
+    div.className = "project-preview";
     div.style.display = "none";
 
     div.innerHTML = `
@@ -71,25 +69,13 @@ async function loadProjects() {
       <p style="display:none;">${project.description}</p>
     `;
 
-    const h3 = div.querySelector("h3");
-    const p = div.querySelector("p");
-
-    h3.addEventListener("click", () => {
+    div.querySelector("h3").onclick = () => {
+      const p = div.querySelector("p");
       p.style.display = p.style.display === "none" ? "block" : "none";
-    });
+    };
 
     section.appendChild(div);
     elements.push(div);
-  });
-
-  title.addEventListener("click", () => {
-    elements.forEach((el) => {
-      el.style.display = visible ? "none" : "block";
-    });
-    visible = !visible;
-    //     „Gehe jedes einzelne Projekt durch
-    // und nimm jedes einzelne Element
-    // und zeig es oder versteck es.“
   });
 }
 
